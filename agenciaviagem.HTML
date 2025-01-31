@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8"/>
+
+
+<head>
+    <title>ExploraMundo Viagens</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+<!-- -->
+<p>
+    A ExploraMundo Viagens é uma agência de turismo especializada em criar experiências personalizadas para viajantes.<br>
+     Nossa missão é facilitar viagens inesquecíveis, oferecendo pacotes exclusivos para diferentes perfis de turistas: aventureiros, casais, famílias e grupos.
+</p>
+
+
+<form>
+    <!--nesta parte já estamos dentro do formulario, vamos criar os textos e caixa de entrada-->
+    <h2>Cadastro do usuario</h2>
+    <!-- aqui nos nomeamos a label e o input com o mesmo nome os ligando -->
+    <label for="Nome"> Nome:</label>
+    <input type="text" name="Nome" id="Nome">
+
+    <label for="Email"> E-mail:</label>
+    <input type="text" name="Email" id="Email">
+
+    <label for="RG"> RG:</label>
+    <input type="text" name="RG" id="RG">
+
+    <label for="CPF"> CPF:</label>
+    <input type="text" name="CPF" id="CPF">
+
+    <label for="nascimento"> Data de nascimento:</label>
+    <input type="date" name="nascimento" id="nascimento" min="1940-01-01" max="2025-12-31"><br>
+
+    <h2>Endereço</h2>
+
+    <label for="rua"> Rua:</label>
+    <input type="text" name="rua" id="rua">
+
+    <label for="numero"> Numero:</label>
+    <input type="text" name="numero" id="numero">
+
+    <label for="complemento"> Complemento:</label>
+    <input type="text" name="complemento" id="complemento">
+
+    <label for="cep"> CEP:</label>
+    <input type="text" name="cep" id="cep"><br>
+
+    <h2>planejamento da viagem</h2>
+
+    <label for="destino_origem">Qual o seu destino de origem:</label>
+    <!-- aqui nós criamos uma comboBox para o usuario escolher o destino de origem -->
+    <!-- o select cria a caixa e opition coloca os valores dentro -->
+    <select name="plataforma" id="destino_origem">
+        <option value="Origem_SaoPaulo">São Paulo</option>
+        <option value="Origem_SantaCatarina">Santa Catarina</option>
+        <option value="Origem_Rio">Rio de janeiro</option>
+        <option value="Origem_Parana">Parana</option>
+    </select>
+
+    <label for="destino_final">Qual o seu destino final:</label>
+    <select name="plataforma" id="destino_final">
+        <option value="Final_SaoPaulo">São Paulo</option>
+        <option value="Final_SantaCatarina">Santa Catarina</option>
+        <option value="Final_Rio">Rio de janeiro</option>
+        <option value="Final_Parana">Parana</option>
+    </select><br><br>
+
+    <label for="tipo_viagem">Qual o transporte que você gostaria:</label>
+    <select name="tipo_viagem" id="tipo_viagem">
+        <option value="onibus">onibus</option>
+        <option value="aviao">avião</option>
+        <option value="navio">navio</option>
+    </select><br><br>
+
+    <!--aqui criei dois calendarios para a ida e a volta-->
+    <label for="data_inicio_viagem">Data do inicio da viagem:</label>
+    <input type="date" name="data_inicio_viagem" id="data_inicio_viagem" min="2025-01-01" max="2050-12-31">
+
+    <label for="data_final_viagem">Data do final da viagem:</label>
+    <input type="date" name="data_final_viagem" id="data_final_viagem" min="2025-01-01" max="2050-12-31">
+
+    <h2>hospedagem</h2>
+
+    <label for="hospedar">Você gostaria de hospedagem: </label>
+    <select name="hospedar" id="hospedar">
+        <option value="hospedagem_sim">sim</option>
+        <option value="hospedagem_nao">não</option>
+    </select>
+
+    <label for="tipo_de_hospedagem"> Qual tipo de hospedagem você gostaria:</label> 
+    <select name="tipo_de_hospedagem" id="tipo_de_hospedagem">
+        <option value="hospedagem_inteira">hospedagem com comida</option>
+        <option value="hospedagem_meia">hospedagem com uma refeição</option>
+        <option value="hospedagem_sem_comida">hospedagem sem refeição</option>
+    </select>
+
+    <h2>pagamento</h2>
+    <label for="pagamento">Qual seria a forma de pagamento</label>
+    <select name="pagamento" id="pagamento">
+        <option value="pix">pix</option>
+        <option value="debito">debito</option>
+        <option value="credito">credito</option>
+    </select>
+</form>
+
+
+
+
+
+</body>
+</html>
